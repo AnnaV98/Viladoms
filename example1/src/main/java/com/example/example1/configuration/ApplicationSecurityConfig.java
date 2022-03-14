@@ -56,7 +56,9 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         System.out.println("User:"+ user);
         System.out.println("Password:"+password);
         auth.inMemoryAuthentication()
-                .withUser(user).password(passwordEncoder().encode(password)).authorities("ROLE_ADMIN");
+                .withUser(user).password(passwordEncoder().encode(password)).authorities("ROLE_ADMIN").and()
+                .withUser("silvia").password(passwordEncoder().encode("1235")).authorities("ROLE_ADMIN");
+
 
     }
 
