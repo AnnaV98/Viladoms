@@ -5,7 +5,7 @@ import com.example.example1.domini.Author;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AuthorRepository extends CrudRepository <Author, Integer>{
-//
+
 //    public Iterable<Author> getAllAuthors();
 //
 //    public Author createAuthor(Author author);

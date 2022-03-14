@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 public class Author {
 	
 	@Id
-	@GeneratedValue
+//	@GeneratedValue
 	@NotNull
 //	@Size(min=0, max=10)
 	public int id;
