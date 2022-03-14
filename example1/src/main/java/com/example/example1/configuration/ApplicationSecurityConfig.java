@@ -25,13 +25,13 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public ApplicationSecurityConfig() {}
 
-    //No serveix de res,
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
 
-                .antMatchers("/**").hasRole("ADMIN")
+                .antMatchers("/h2-console").hasRole("ADMIN")
 
                 .anyRequest()
                 .authenticated()

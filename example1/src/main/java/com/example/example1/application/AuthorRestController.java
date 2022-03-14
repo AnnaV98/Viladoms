@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api")
-//http://localhost:8080/api/authors
+//http://localhost:8086/api/authors
 public class AuthorRestController {
 
 	// En lloc d'utilitzar el @Autowired

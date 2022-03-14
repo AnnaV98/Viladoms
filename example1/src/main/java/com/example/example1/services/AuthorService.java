@@ -38,7 +38,9 @@ public class AuthorService {
     public String findAndDeleteAuthor(int id) {
 
         Optional<Author> author = authorRepository.findById(id);
+
         String message = "";
+
         if (author.isPresent()) {
 
             authorRepository.delete(author.get());

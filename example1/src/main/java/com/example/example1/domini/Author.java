@@ -16,18 +16,21 @@ public class Author {
 	@Id
 	@GeneratedValue
 	@NotNull
-//	@Size(min=0, max=10)
 	public int id;
+
 	@NotEmpty
-//	@Min(2)
 	public String name;
+
 	@NotEmpty
 	public String country;
+
 	@NotNull
 	public int dob;
+
 	@NotNull
 	@Max(999)
 	public int qtyBooks;
+
 	@NotNull
 	public Boolean alive;
 	

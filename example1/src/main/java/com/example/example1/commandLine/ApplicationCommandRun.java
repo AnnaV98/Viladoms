@@ -40,22 +40,6 @@ public class ApplicationCommandRun implements CommandLineRunner {
 
 
 
-//
-//
-//        authorService.findAndDeleteAuthor(1);
-//
-//        logger.info("count: " + authorService.count());
-//        logger.info(authorService.getAllAuthors());
-//        logger.info("exists ['1']: " + authorService.existsById(1));
-//
-//        authorService.createAuthor(new Author("5", "Paul", "Mendez"));
-//
-//
-//        logger.info("count: " + authorService.count());
-//        logger.info(authorService.getAllAuthors());
-//        logger.info("exists ['1']: " + authorService.existsById(1));
-//        logger.info("exists ['5']: " + authorService.existsById(5));
-
 
 
 
