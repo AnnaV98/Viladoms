@@ -22,9 +22,9 @@ public class ApplicationCommandRun implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         //name, country, dob, qtyBooks, alive)
-        Author author1 = new Author(14022022, "William Shakespeare", "Unite Kigndoom", 1564, 48, false);
-        Author author2 = new Author(16022022, "Enric", "Moiá", 1997, 0, true);
-        Author author3 = new Author(17022022, "Un altre autor més", "Algún lloc", 2000, 2, true);
+        Author author1 = new Author("William Shakespeare", "Unite Kigndoom", 1564, 48, false);
+        Author author2 = new Author("Enric", "Moiá", 1997, 0, true);
+        Author author3 = new Author("Un altre autor més", "Algún lloc", 2000, 2, true);
 
 
         authorService.createAuthor(author1);
@@ -36,7 +36,7 @@ public class ApplicationCommandRun implements CommandLineRunner {
 
         logger.info("count: " + authorService.count());
         logger.info(authorService.getAllAuthors());
-        logger.info("exists ['14022022']: " + authorService.existsById(14022022));
+        logger.info("exists ['1']: " + authorService.existsById(1));
 
 
 

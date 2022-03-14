@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 public class Author {
 	
 	@Id
-//	@GeneratedValue
+	@GeneratedValue
 	@NotNull
 //	@Size(min=0, max=10)
 	public int id;
@@ -54,6 +54,19 @@ public class Author {
 		this.qtyBooks = qtyBooks;
 		this.alive = alive;
 	}
+
+	public Author (String name, String country, int dob,int qtyBooks, Boolean alive) {
+		//super();
+		this.name = name;
+		this.country = country;
+		this.dob = dob;
+		this.qtyBooks = qtyBooks;
+		this.alive = alive;
+	}
+
+
+
+
 
 	public List<Book> getBooks() {
 		return books;
